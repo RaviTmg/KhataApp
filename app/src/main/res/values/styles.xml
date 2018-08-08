@@ -6,6 +6,8 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowLightStatusBar">true</item>
+
     </style>
 
     <style name="AppTheme.NoActionBar">
@@ -17,22 +19,19 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
-    <style name="Khata.Widget.CardViewHome" parent="Widget.MaterialComponents.CardView">
-        <item name="android:layout_marginTop">8dp</item>
-        <item name="android:layout_marginEnd">8dp</item>
-        <item name="android:layout_marginStart">8dp</item>
-        <item name="android:padding">4dp</item>
+    <!-- set the rounded drawable as background to your bottom sheet -->
+    <style name="BottomSheet" parent="@style/Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/bg_bottom_menu</item>
     </style>
 
-    <style name="Widget.Khata.Button.UnelevatedButton" parent="Widget.MaterialComponents.Button.UnelevatedButton">
-        <item name="android:layout_weight">1</item>
-        <item name="android:textColor">@color/colorAccent</item>
-        <item name="android:background">@android:color/white</item>
-        <item name="cornerRadius">0dp</item>
-        <item name="android:textAppearance">@style/TextAppearance.Khata.Button.Calculator</item>
-        <item name="rippleColor">@android:color/darker_gray</item>
-
+    <style name="BaseBottomSheetDialog" parent="@style/Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="bottomSheetStyle">@style/BottomSheet</item>
     </style>
+
+    <style name="BottomSheetDialogTheme" parent="BaseBottomSheetDialog" >
+    </style>
+
     <style name="TextAppearance.Khata.Button.Calculator" parent="TextAppearance.MaterialComponents.Headline4">
         <item name="android:textSize">30sp</item>
     </style>

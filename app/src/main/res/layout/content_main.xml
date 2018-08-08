@@ -8,165 +8,131 @@
     tools:context=".MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <LinearLayout
+
+    <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
-
-
-        <com.google.android.material.card.MaterialCardView
-            style="@style/Khata.Widget.CardViewHome"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
 
-            <LinearLayout
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="CashFlow"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1" />
+
+
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="8dp"
-                android:orientation="vertical">
+                android:layout_margin="16dp"
+                android:gravity="center"
+                android:text="Rs.1000"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp">
 
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp"
-                    android:text="CashFlow"
-                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body1" />
+                    android:layout_alignParentStart="true"
+                    android:text="Income"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body2" />
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_margin="16dp"
-                    android:gravity="center"
-                    android:text="Rs.1000"
-                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
-                    android:textColor="@color/colorAccent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="Rs. 1000"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                    android:textColor="@color/colorPrimary"
                     android:textStyle="bold" />
+            </RelativeLayout>
 
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="4dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentStart="true"
-                        android:text="Income"
-                        android:textAppearance="@style/TextAppearance.MaterialComponents.Body2" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentEnd="true"
-                        android:text="Rs. 1000"
-                        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
-                        android:textColor="@color/colorPrimary"
-                        android:textStyle="bold" />
-                </RelativeLayout>
-
-                <ProgressBar
-                    style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="20dp"
-                    android:layout_margin="4dp"
-                    android:progress="56"
-                    android:progressDrawable="@drawable/progress_drawable" />
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="4dp"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginEnd="4dp"
-                    android:layout_marginBottom="4dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentStart="true"
-                        android:text="Expense"
-                        android:textAppearance="@style/TextAppearance.MaterialComponents.Body2" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentEnd="true"
-                        android:text="Rs. 10"
-                        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
-                        android:textColor="@color/colorAccent" />
-                </RelativeLayout>
-
-                <ProgressBar
-                    style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="20dp"
-                    android:layout_marginStart="4dp"
-                    android:layout_marginEnd="4dp"
-                    android:layout_marginBottom="16dp"
-                    android:progress="4"
-                    android:progressDrawable="@drawable/progress_drawable" />
-
-            </LinearLayout>
-        </com.google.android.material.card.MaterialCardView>
-
-        <com.google.android.material.card.MaterialCardView
-            style="@style/Khata.Widget.CardViewHome"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <LinearLayout
+            <ProgressBar
+                style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="8dp"
-                android:orientation="vertical">
+                android:layout_height="20dp"
+                android:layout_margin="4dp"
+                android:progress="56"
+                android:progressDrawable="@drawable/progress_drawable" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="4dp">
 
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp"
-                    android:text="Expenses Structure"
-                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body1" />
+                    android:layout_alignParentStart="true"
+                    android:text="Expense"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body2" />
 
-                <com.github.mikephil.charting.charts.PieChart
-                    android:id="@+id/pichart"
-                    android:layout_width="300dp"
-                    android:layout_height="300dp"
-                    android:layout_gravity="center"
-                    android:layout_margin="16dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="Rs. 10"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                    android:textColor="@color/colorAccent" />
+            </RelativeLayout>
 
-            </LinearLayout>
-        </com.google.android.material.card.MaterialCardView>
+            <ProgressBar
+                style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="20dp"
+                android:progress="4"
+                android:progressDrawable="@drawable/progress_drawable" />
 
-        <com.google.android.material.card.MaterialCardView
-            style="@style/Khata.Widget.CardViewHome"
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lineDivider" />
 
-            android:layout_width="match_parent"
-            android:layout_height="100dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Expenses Structure"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1" />
 
-        <com.google.android.material.card.MaterialCardView
-            style="@style/Khata.Widget.CardViewHome"
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pichart"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
 
-            android:layout_width="match_parent"
-            android:layout_height="100dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Balance Chart"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1" />
 
-        <com.google.android.material.card.MaterialCardView
-            style="@style/Khata.Widget.CardViewHome"
-
-            android:layout_width="match_parent"
-            android:layout_height="100dp" />
-
-        <com.google.android.material.card.MaterialCardView
-            style="@style/Khata.Widget.CardViewHome"
-
-            android:layout_width="match_parent"
-            android:layout_height="100dp" />
-
-        <com.google.android.material.card.MaterialCardView
-            style="@style/Khata.Widget.CardViewHome"
-
-            android:layout_width="match_parent"
-            android:layout_height="100dp" />
-    </LinearLayout>
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/lineChart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginBottom="32dp" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
 
 </androidx.core.widget.NestedScrollView>

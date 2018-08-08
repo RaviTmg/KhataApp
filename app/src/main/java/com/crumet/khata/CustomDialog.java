@@ -14,6 +14,15 @@ public class CustomDialog extends BottomSheetDialogFragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.content_bottom_menu, container, false);
+        View v = inflater.inflate(R.layout.content_bottom_menu, container, false);
+
+
+        return v;
+    }
+
+
+    @Override
+    public int getTheme() {
+        return R.style.BottomSheetDialogTheme;
     }
 }
