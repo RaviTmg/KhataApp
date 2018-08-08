@@ -20,7 +20,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setSupportActionBar(bottom_bar)
-        startActivity(Intent(this, LoginActivity::class.java))
         fab.setOnClickListener {
             startActivity(Intent(this, AddRecordActivity::class.java))
 
