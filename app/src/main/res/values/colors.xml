@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#F4F4F4</color>
-    <color name="colorAccent">#D81B60</color>
-    <color name="calculatorText">#D81B60</color>
+    <color name="colorPrimary">#344955</color>
+    <color name="colorPrimaryDark">#D2DBE0</color>
+    <color name="colorAccent">#E88D0C</color>
+    <color name="calculatorText">#E88D0C</color>
     <color name="lineDivider">#dbdbdb</color>
+    <color name="darkerPrimary">#232f34</color>
+    <color name="negative">#FF0000</color>
 </resources>

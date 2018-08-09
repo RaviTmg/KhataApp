@@ -29,8 +29,7 @@
         <item name="bottomSheetStyle">@style/BottomSheet</item>
     </style>
 
-    <style name="BottomSheetDialogTheme" parent="BaseBottomSheetDialog" >
-    </style>
+    <style name="BottomSheetDialogTheme" parent="BaseBottomSheetDialog"></style>
 
     <style name="TextAppearance.Khata.Button.Calculator" parent="TextAppearance.MaterialComponents.Headline4">
         <item name="android:textSize">30sp</item>

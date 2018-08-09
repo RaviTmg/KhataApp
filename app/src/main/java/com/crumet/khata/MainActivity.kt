@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
     @SuppressLint("InflateParams")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        startActivity(Intent(this,SignupActivity::class.java))
         setContentView(R.layout.activity_main)
         setSupportActionBar(bottom_bar)
         fab.setOnClickListener {
