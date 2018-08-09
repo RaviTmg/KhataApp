@@ -18,13 +18,25 @@ class MainActivity : AppCompatActivity() {
     @SuppressLint("InflateParams")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        startActivity(Intent(this,SignupActivity::class.java))
+
+        val userSession = UserSession(this)
+        if (userSession.firstTime){
+            userSession.setFirstTime()
+            startActivity(Intent(this,SignupActivity::class.java))
+        } else{
+            userSession.setFirstTime()
+            if (!userSession.isUserLoggedIn){
+                startActivity(Intent(this,LoginActivity::class.java))
+            }
+        }
+
+
         setContentView(R.layout.activity_main)
         setSupportActionBar(bottom_bar)
         fab.setOnClickListener {
             startActivity(Intent(this, AddRecordActivity::class.java))
-
         }
+
 
 
         bottom_bar.setNavigationOnClickListener {
