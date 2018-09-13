@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/white"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".AddRecordActivity"
-    android:background="@android:color/white"
     tools:showIn="@layout/activity_add_record">
 
     <com.google.android.material.button.MaterialButton
@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/btn_template"
         android:layout_centerHorizontal="true"
-        android:text="Rs. 100"
+        android:text=""
         android:textAppearance="@style/TextAppearance.MaterialComponents.Headline2" />
 
     <LinearLayout
@@ -53,12 +53,12 @@
     </LinearLayout>
 
     <TableLayout
-        android:layout_margin="16dp"
         android:id="@+id/table_input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
         android:background="@color/lineDivider">
 
         <TableRow
@@ -80,8 +80,8 @@
                 android:text="C" />
 
             <Button
-                android:layout_marginBottom="1dp"
                 style="@style/Widget.Khata.CalculatorButton"
+                android:layout_marginBottom="1dp"
                 android:text="←" />
 
 
@@ -93,21 +93,25 @@
             android:weightSum="4">
 
             <Button
-
+                android:id="@+id/btn7"
                 style="@style/Widget.Khata.CalculatorButton"
                 android:text="7" />
 
             <Button
+                android:id="@+id/btn8"
                 style="@style/Widget.Khata.CalculatorButton"
                 android:text="8" />
 
             <Button
+                android:id="@+id/btn9"
                 style="@style/Widget.Khata.CalculatorButton"
                 android:text="9" />
 
             <Button
-                android:layout_marginStart="1dp"
+
+                android:id="@+id/btnadd"
                 style="@style/Widget.Khata.CalculatorButton"
+                android:layout_marginStart="1dp"
                 android:text="+" />
 
 
@@ -119,70 +123,91 @@
             android:weightSum="4">
 
             <Button
+                android:id="@+id/btn4"
                 style="@style/Widget.Khata.CalculatorButton"
                 android:text="4" />
 
             <Button
+                android:id="@+id/btn5"
                 style="@style/Widget.Khata.CalculatorButton"
                 android:text="5" />
 
             <Button
+
+                android:id="@+id/btn6"
                 style="@style/Widget.Khata.CalculatorButton"
                 android:text="6" />
 
             <Button
-                android:layout_marginStart="1dp"
+
+                android:id="@+id/btnsub"
                 style="@style/Widget.Khata.CalculatorButton"
+                android:layout_marginStart="1dp"
                 android:text="−" />
 
 
         </TableRow>
+
         <TableRow
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:weightSum="4">
 
             <Button
+
+                android:id="@+id/btn1"
                 style="@style/Widget.Khata.CalculatorButton"
                 android:text="1" />
 
             <Button
+
+                android:id="@+id/btn2"
                 style="@style/Widget.Khata.CalculatorButton"
                 android:text="2" />
 
             <Button
+
+                android:id="@+id/btn3"
                 style="@style/Widget.Khata.CalculatorButton"
                 android:text="3" />
 
             <Button
-                android:layout_marginStart="1dp"
+                android:id="@+id/btndiv"
                 style="@style/Widget.Khata.CalculatorButton"
+                android:layout_marginStart="1dp"
                 android:text="÷" />
 
 
         </TableRow>
+
         <TableRow
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:weightSum="4">
 
             <Button
+                android:id="@+id/btndec"
                 style="@style/Widget.Khata.CalculatorButton"
                 android:text="." />
 
             <Button
+
+                android:id="@+id/btn0"
                 style="@style/Widget.Khata.CalculatorButton"
                 android:text="0" />
 
             <Button
-                android:textColor="@color/colorAccent"
-                android:textStyle="bold"
+
+                android:id="@+id/btnequals"
                 style="@style/Widget.Khata.CalculatorButton"
-                android:text="=" />
+                android:text="="
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold" />
 
             <Button
-                android:layout_marginStart="1dp"
+                android:id="@+id/btnmul"
                 style="@style/Widget.Khata.CalculatorButton"
+                android:layout_marginStart="1dp"
                 android:text="×" />
 
 
